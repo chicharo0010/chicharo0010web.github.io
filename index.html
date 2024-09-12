@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebita</title>
+    <script src="validar.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="principal">
+        <form metod="get" name="registro" onsubmit="return validar(this)" action="index.html">
+            <label for="">Nombre:</label>
+            <input class="cajas"  type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <br>
+            <br>
+            <label for="">Edad:</label>
+            <input class="cajas"  type="text" name="edad" id="edad" placeholder="Edad">
+            <br>
+            <br>
+            <legend>Seleccionar sexo:</legend>
+            <blockquote>
+                <label for="">femenino:</label>
+                <input type="radio" name="sexo" id="femenino">
+                <label for="">maculino</label>
+                <input type="radio" name="sexo" id="masculino">
+
+            </blockquote>
+    <label for="">
+        <span>Deporte favorito:</span>
+        <select name="deporte" id="deporte">
+            <option value="ninguno">ninguno</option>
+            <option value="Futbol">Futbol</option>
+            <option value="basquetbol">basquetbol</option>
+            <option value="basebol">basebol</option>
+            <option value="tenis">tenis</option>
+            
+        
+        </select>
+    </label>
+    <input class="boton" id="enviar" type="submit" value="enviar">
+    <input class="boton" id="reset" type="submit" value="restablecer">
+        </form>
+    </div>
+
+    
+</body>
+</html>
